@@ -7,7 +7,9 @@ var ExpedienteSchema = new mongoose.Schema({
     Materia:String,
     Partes:[],
     UCreador:String,
-    fecha: { type: Date, default: Date.now }
+    fecha: { 
+                type: Date, default: Date.now 
+            }
 })
 
 mongoose.model('Expedientes', ExpedienteSchema);
